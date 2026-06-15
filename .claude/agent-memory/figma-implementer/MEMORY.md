@@ -1,0 +1,5 @@
+- [Figma MCP unavailable in subagent](project_figma-mcp-unavailable-in-subagent.md) — Figma tools fail with "No such tool available" inside this agent; probe before promising design-to-code
+- [Repo component conventions](reference_repo-component-conventions.md) — where to learn the 4-file set, token styling, Icon reuse, and test/story patterns
+- [No 6px spacing token](project_spacing-6px-gap.md) — spacing scale skips 6; use a flagged literal const, never invent a token
+- [Pseudo-state styling](reference_pseudo-state-styling.md) — inline-style components can't do ::placeholder/:focus-within; use scoped <style> + root class with tokens
+- [Controlled input onChange test](reference_controlled-input-onchange-test.md) — fire React onChange in Vitest via native value setter, not raw .value

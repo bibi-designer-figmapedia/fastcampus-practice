@@ -1,0 +1,7 @@
+node_modules/
+dist/
+storybook-static/
+package-lock.json
+docs/
+scripts/
+*.md
