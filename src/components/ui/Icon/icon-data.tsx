@@ -18,8 +18,6 @@ export const ICON_NAMES = [
   'message',
   'heart_empty',
   'heart_fill',
-  'bookmark_empty',
-  'bookmark_fill',
   'check',
   'google',
 ] as const
@@ -445,22 +443,6 @@ export const iconPaths: Record<IconName, ReactNode> = {
         />
       </svg>
     </>
-  ),
-  // 리본 북마크: 상단 둥근 사각형 + 하단 V 노치. heart_empty/heart_fill 선례와
-  // 동일하게 empty는 외곽선(stroke), fill은 채움(fill)으로 currentColor 상속.
-  bookmark_empty: (
-    <path
-      d="M4 2.5h8a1 1 0 0 1 1 1v10l-5-3.5-5 3.5v-10a1 1 0 0 1 1-1z"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-  ),
-  bookmark_fill: (
-    <path
-      d="M4 2.5h8a1 1 0 0 1 1 1v10l-5-3.5-5 3.5v-10a1 1 0 0 1 1-1z"
-      fill="currentColor"
-    />
   ),
   check: (
     <>

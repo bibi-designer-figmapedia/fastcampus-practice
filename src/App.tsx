@@ -32,7 +32,9 @@ export function App() {
   return (
     <div style={containerStyle}>
       <h1 style={titleStyle}>피그마피디아 디자인 시스템</h1>
-      <p style={descStyle}>토큰과 컴포넌트가 준비되어 있습니다. 페이지를 만들어보세요!</p>
+      <p style={descStyle}>
+        토큰과 컴포넌트가 준비되어 있습니다. 페이지를 만들어보세요!
+      </p>
     </div>
   )
 }

@@ -1,6 +1,5 @@
 import type { CSSProperties } from 'react'
 import { Icon } from '../Icon'
-import { BookmarkButton } from '../BookmarkButton'
 
 export interface PostCardStatsProps {
   /** View count value. Defaults to `"0"`. */
@@ -9,13 +8,6 @@ export interface PostCardStatsProps {
   likeCount?: string
   /** 좋아요 활성화 여부. true면 채워진 빨간 하트. 기본 `false`. */
   liked?: boolean
-  /** 북마크 활성화 여부. `onToggleBookmark`와 함께 사용한다. */
-  bookmarked?: boolean
-  /**
-   * 북마크 토글 핸들러. 전달될 때만 세 번째 아이템으로 북마크 버튼을 노출한다
-   * (미전달 시 조회수·좋아요만 렌더 — 하위호환 유지).
-   */
-  onToggleBookmark?: () => void
   /** Extra class forwarded to the root element. */
   className?: string
 }
@@ -54,8 +46,6 @@ export function PostCardStats({
   viewCount = '0',
   likeCount = '0',
   liked = false,
-  bookmarked = false,
-  onToggleBookmark,
   className,
 }: PostCardStatsProps) {
   return (
@@ -73,9 +63,6 @@ export function PostCardStats({
         />
         <span style={textStyle}>{likeCount}</span>
       </div>
-      {onToggleBookmark ? (
-        <BookmarkButton filled={bookmarked} onClick={onToggleBookmark} />
-      ) : null}
     </div>
   )
 }
