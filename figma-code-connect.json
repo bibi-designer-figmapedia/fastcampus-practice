@@ -1,0 +1,77 @@
+{
+  "_설명": "Figma Code Connect 매핑. Claude Code에서 get_code_connect_suggestions 실행 후 자동 생성됨.",
+  "mappings": {
+    "781:5253": {
+      "component": "PostImage",
+      "source": "src/components/ui/PostImage",
+      "kind": "component-set",
+      "props": {
+        "type": "variant:type"
+      },
+      "example": "<PostImage type={1} alt=\"...\" />"
+    },
+    "783:7868": {
+      "component": "PostCardImage",
+      "source": "src/components/ui/PostCardImage",
+      "kind": "component-set",
+      "props": {
+        "type": "variant:type"
+      },
+      "example": "<PostCardImage type={1} alt=\"...\" />"
+    },
+    "137:1497": {
+      "component": "ButtonLarge",
+      "source": "src/components/ui/Button",
+      "kind": "component-set",
+      "props": {
+        "style": "variant:style",
+        "type": "variant:type",
+        "disabled": "variant:disabled"
+      },
+      "_note": "Figma 변형 'warining'/'warininglight' 오타는 코드 prop에서 'warning'/'warninglight'로 매핑",
+      "example": "<ButtonLarge style=\"core\" type=\"label\">Button</ButtonLarge>"
+    },
+    "137:1384": {
+      "component": "ButtonMedium",
+      "source": "src/components/ui/Button",
+      "kind": "component-set",
+      "props": {
+        "style": "variant:style",
+        "type": "variant:type",
+        "disabled": "variant:disabled"
+      },
+      "_note": "Figma 변형 'warining'/'warininglight' 오타는 코드 prop에서 'warning'/'warninglight'로 매핑",
+      "example": "<ButtonMedium style=\"core\" type=\"label\">Button</ButtonMedium>"
+    },
+    "137:1610": {
+      "component": "ButtonSmall",
+      "source": "src/components/ui/Button",
+      "kind": "component-set",
+      "props": {
+        "style": "variant:style",
+        "type": "variant:type",
+        "disabled": "variant:disabled"
+      },
+      "_note": "Figma 변형 'warining'/'warininglight' 오타는 코드 prop에서 'warning'/'warninglight'로 매핑",
+      "example": "<ButtonSmall style=\"core\" type=\"label\">Button</ButtonSmall>"
+    },
+    "764:2186": {
+      "component": "Category",
+      "source": "src/components/ui/Category",
+      "kind": "component-set",
+      "props": {
+        "state": "variant:state"
+      },
+      "example": "<Category state=\"selected\">커뮤니티</Category>"
+    },
+    "783:2797": {
+      "component": "NavigationBar",
+      "source": "src/components/ui/NavigationBar",
+      "kind": "component-set",
+      "props": {
+        "state": "variant:state"
+      },
+      "example": "<NavigationBar state=\"login\" />"
+    }
+  }
+}

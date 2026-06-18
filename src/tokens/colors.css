@@ -1,0 +1,114 @@
+/*
+ * 색상 토큰 — Figma 동기화 (source of truth)
+ * Figma 파일: TyHIRM96agsiPYsydx8bUb (node 0:1) / 동기화일: 2026-06-10
+ * 구조: Primitive (원시 hex) → Semantic (var() 참조)
+ */
+:root {
+  /* ===== Primitive: Gray ===== */
+  --color-gray-100: #ffffff;
+  /* ⚠️ Figma "Gray/100"(#f9fafb)이 "gray/100"(#ffffff)과 kebab-case 변환 시 이름 충돌 → -alt 접미사 */
+  --color-gray-100-alt: #f9fafb;
+  --color-gray-200: #fafafa; /* Figma "Gray/200" */
+  --color-gray-300: #f5f7fa;
+  --color-gray-305: #f1f5f9;
+  --color-gray-340: #e2e8f0;
+  --color-gray-360: #e5e7eb;
+  --color-gray-400: #d1d5db;
+  --color-gray-490: #94a3b8;
+  --color-gray-500: #9ca3af;
+  --color-gray-540: #7c8484;
+  --color-gray-600: #6b7280;
+  --color-gray-610: #64748b;
+  --color-gray-700: #4b5563;
+  --color-gray-800: #374151;
+  --color-gray-850: #2c3030;
+  --color-gray-900: #262626;
+  --color-gray-1000: #161c1c;
+  --color-gray-1050: #0f172a;
+
+  /* ===== Primitive: Blue ===== */
+  --color-blue-20: #f7faff;
+  --color-blue-50: #eff6ff;
+  --color-blue-100: #f1f8fe;
+  --color-blue-120: #dbeafe;
+  --color-blue-200: #b8dcfc;
+  --color-blue-280: #93c5fd;
+  --color-blue-300: #91caff;
+  --color-blue-400: #69b1ff;
+  --color-blue-440: #63a3fb;
+  --color-blue-500: #4096ff;
+  --color-blue-540: #3b82f6;
+  --color-blue-600: #1289f6;
+  --color-blue-680: #1d4ed8;
+  --color-blue-700: #0958d9;
+  --color-blue-800: #003eb3;
+  --color-blue-900: #002c8c;
+  --color-blue-1000: #001d66;
+
+  /* ===== Primitive: Red ===== */
+  --color-red-100: #fffbfc;
+  --color-red-200: #fff2f5;
+  --color-red-300: #ffccc7;
+  --color-red-400: #ffa39e;
+  --color-red-500: #ff4d4f;
+  --color-red-600: #fc2a55;
+  --color-red-700: #cf1322;
+  --color-red-800: #a8071a;
+  --color-red-900: #820014;
+  --color-red-1000: #5c0011;
+
+  /* ===== Semantic: Text ===== */
+  --color-text-primary: var(--color-gray-1000);
+  --color-text-secondary: var(--color-gray-600);
+  --color-text-tertiary: var(--color-gray-500);
+  --color-text-disabled: var(--color-gray-400);
+  --color-text-onbrand: var(--color-gray-100);
+  --color-text-danger: var(--color-red-600); /* Figma "text/Danger" */
+
+  /* ===== Semantic: Background ===== */
+  --color-background-default: var(--color-gray-100);
+  --color-background-subtle: var(
+    --color-gray-200
+  ); /* Figma "background/Subtle" → Gray/200(#fafafa) alias */
+  --color-background-muted: var(--color-gray-300);
+  --color-background-brand: var(--color-blue-600);
+  --color-background-brandsubtle: var(--color-blue-100);
+  --color-background-danger: var(--color-red-200);
+  --color-background-dangersubtle: var(--color-red-100);
+
+  /* ===== Semantic: Border ===== */
+  --color-border-default: var(--color-gray-400);
+  --color-border-strong: var(--color-gray-700);
+  --color-border-brand: var(--color-blue-600);
+  --color-border-danger: var(--color-red-600);
+
+  /* ===== Semantic: Content ===== */
+  --color-content-default: var(--color-gray-800);
+  --color-content-strong: var(--color-gray-900);
+  --color-content-muted: var(--color-gray-700);
+
+  /* ===== Semantic: Brand / Interactive ===== */
+  --color-brand-primary: var(--color-blue-600);
+  --color-interactive-primary: var(--color-blue-600);
+  --color-interactive-primaryhover: var(--color-blue-700);
+  --color-interactive-destructive: var(--color-red-600);
+  --color-interactive-destructivehover: var(--color-red-700);
+
+  /* ===== Legacy aliases (기존 코드 사용 중 — Figma에 동일 이름 없음, 삭제 금지) ===== */
+  --primitive-white: var(--color-gray-100);
+  --primitive-gray-50: var(--color-gray-100-alt); /* #f9fafb */
+  --primitive-gray-200: var(--color-gray-360); /* #e5e7eb */
+  --primitive-gray-500: var(--color-gray-600); /* #6b7280 */
+  --primitive-gray-900: #111827; /* ⚠️ Figma에 매칭 값 없음 — 기존 값 유지 */
+  --primitive-blue-500: var(--color-blue-540); /* #3b82f6 */
+  --primitive-green-500: #22c55e; /* ⚠️ Figma에 green 계열 없음 — 기존 값 유지 */
+  --primitive-red-500: #ef4444; /* ⚠️ Figma에 매칭 값 없음 — 기존 값 유지 */
+  --color-bg-primary: var(--color-background-default);
+  --color-bg-secondary: var(--primitive-gray-50);
+  --color-status-success: var(
+    --primitive-green-500
+  ); /* ⚠️ Figma에 success 토큰 없음 */
+  --color-status-error: var(
+    --primitive-red-500
+  ); /* ⚠️ Figma에 status/error 토큰 없음 */
+}
